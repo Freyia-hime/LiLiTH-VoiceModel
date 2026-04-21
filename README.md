@@ -16,3 +16,6 @@ python3 test_lilith.py
 Notes
 Best with Japanese text
 Thai is not officially supported by this custom voice model
+
+## Model Download
+https://huggingface.co/RATER456/lilith-voice
