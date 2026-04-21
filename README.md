@@ -1,21 +1,113 @@
-# Lilith Voice Model
+# LiLiTH Voice Model 🎙️
 
-Japanese custom voice model trained from Qwen3-TTS 12Hz 1.7B Base.
+โมเดลเสียงนี้ถูกพัฒนาขึ้นเพื่อใช้กับโปรเจกต์ **LiLiTH Agent**
+👉 https://github.com/Freyia-hime/LiLiTH
 
-## Structure
+---
 
-- model/checkpoint-epoch-2
-- test_lilith.py
-- demo/
+## 📌 จุดประสงค์
 
-## Usage
+โมเดลนี้ถูกสร้างขึ้นเพื่อ:
 
-Edit `test_lilith.py` and run:
+* ให้ LiLiTH Agent สามารถ “พูดได้” ด้วยเสียงเฉพาะตัว
+* ใช้ในระบบ **Text-to-Speech (TTS)** สำหรับ Discord
+* สร้างเอกลักษณ์เสียง (Character Voice) ของ LiLiTH
 
+---
+
+## 🤖 LiLiTH Agent คืออะไร
+
+LiLiTH เป็น AI Agent ที่ถูกออกแบบมาเพื่อ:
+
+* ดูแลกลุ่ม Discord
+* ตอบโต้ผู้ใช้แบบอัตโนมัติ
+* จัดการคำสั่ง และ event ต่าง ๆ ภายในเซิร์ฟเวอร์
+
+ในอนาคตมีแผนจะพัฒนาไปสู่:
+
+* ระบบ AI Assistant เต็มรูปแบบ
+* สามารถโต้ตอบด้วยเสียง
+* เชื่อมต่อกับระบบอื่น ๆ ของ LiLiTH ecosystem
+
+---
+
+## 🎧 โมเดลเสียงนี้ทำอะไรได้
+
+* แปลงข้อความเป็นเสียง (TTS)
+* รองรับการ clone เสียงจากตัวละคร LiLiTH
+* เหมาะกับภาษา:
+
+  * 🇯🇵 Japanese (ดีที่สุด)
+  * ภาษาอื่นอาจใช้ได้ แต่คุณภาพจะลดลง
+
+---
+
+## 📦 ดาวน์โหลดโมเดล
+
+👉 https://huggingface.co/RATER456/LiLiTH_VoiceModel
+
+---
+
+## 🚀 วิธีใช้งาน (ตัวอย่าง)
+
+```bash
 python3 test_lilith.py
-Notes
-Best with Japanese text
-Thai is not officially supported by this custom voice model
+```
 
-## Model Download
-https://huggingface.co/RATER456/lilith-voice
+หรือแก้ไขข้อความใน `test_lilith.py` แล้วรันเพื่อสร้างเสียงใหม่
+
+---
+
+## ⚠️ หมายเหตุ
+
+* โมเดลนี้เทรนจาก dataset ภาษา **ญี่ปุ่น**
+* การใช้ภาษาอื่น (เช่น ไทย) อาจมีสำเนียงเพี้ยน
+* ไม่จำเป็นต้องใช้ไฟล์เสียงต้นฉบับ (.wav) เพื่อรันโมเดล
+
+---
+
+## 🧠 เบื้องหลัง
+
+* Base Model: Qwen3-TTS
+* วิธีเทรน: Full fine-tune (custom voice)
+* Hardware: NVIDIA Jetson (Edge AI)
+
+---
+
+## 📌 โครงสร้างโปรเจกต์
+
+```text
+lilith-voice/
+ ├── demo/
+ ├── test_lilith.py
+ ├── requirements.txt
+ └── README.md
+```
+
+---
+
+## 💡 เป้าหมาย
+
+สร้าง “เสียงของ LiLiTH” ที่สามารถ:
+
+* ใช้งานจริงในระบบ
+* ให้ผู้ใช้โต้ตอบได้เหมือนตัวละครมีชีวิต
+
+---
+
+## 📜 License
+
+โปรดตรวจสอบการใช้งาน dataset และเสียงต้นฉบับก่อนนำไปใช้เชิงพาณิชย์
+
+---
+
+## 👤 ผู้พัฒนา
+
+* [Freyia-hime](https://github.com/Freyia-hime)
+
+---
+
+## ✨ หมายเหตุสุดท้าย
+
+โปรเจกต์นี้ยังอยู่ระหว่างการพัฒนา
+เสียงอาจมีการปรับปรุงเพิ่มเติมในอนาคต
