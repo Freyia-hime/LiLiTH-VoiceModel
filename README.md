@@ -95,12 +95,6 @@ lilith-voice/
 
 ---
 
-## 📜 License
-
-โปรดตรวจสอบการใช้งาน dataset และเสียงต้นฉบับก่อนนำไปใช้เชิงพาณิชย์
-
----
-
 ## 👤 ผู้พัฒนา
 
 * [Freyia-hime](https://github.com/Freyia-hime)
